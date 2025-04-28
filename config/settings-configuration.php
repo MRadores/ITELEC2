@@ -7,8 +7,7 @@ error_reporting(E_ALL);
 
 
 if (empty($_SESSION['csrf_token'])) {
-    $csrf_token = bin2hex(random_bytes(32));
-    $_SESSION['csrf_token'] = $csrf_token;
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 }else{
     $csrf_token = $_SESSION['csrf_token'];
 }

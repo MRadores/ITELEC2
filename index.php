@@ -1,6 +1,6 @@
 <?php
     include_once 'config/settings-configuration.php';
-    
+
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +27,6 @@
         <input type="password" name="password" placeholder="Enter Password" required> <br>
         <button type="submit" name="btn-signup">SIGN UP</button>
     </form>
-    
-    <?php foreach ($_SESSION as $key => $session) { echo "<p>" . $key . ": " . $session . "</p>"; } ?>
+
 </body>
 </html>
